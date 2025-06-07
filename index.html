@@ -53,13 +53,23 @@
     ul li {
       margin-bottom: 10px;
     }
+
+    /* ALL links = yellow */
     a {
       color: #FEE715;
       text-decoration: none;
     }
-    a:hover {
+
+    /* Hover underline for normal links (Telegram/X) */
+    .links a:hover {
       text-decoration: underline;
     }
+
+    /* Force underline for wallet & pump.fun links */
+    .wallets a {
+      text-decoration: underline;
+    }
+
   </style>
 </head>
 <body>
@@ -103,18 +113,22 @@
   <p>Getting $CGOR is easy! Here's how to join the jungle:</p>
 
   <h3>🪙 Step 1: Get a Supported Solana Wallet</h3>
-  <p>You’ll need a Solana wallet like one of these:</p>
-  <ul>
-    <li>🦊 <a href="https://phantom.app/" target="_blank">Phantom</a></li>
-    <li>🧙‍♂️ <a href="https://solflare.com/" target="_blank">Solflare</a></li>
-    <li>🐉 <a href="https://backpack.app/" target="_blank">Backpack</a></li>
-  </ul>
+  <div class="wallets">
+    <p>You’ll need a Solana wallet like one of these:</p>
+    <ul>
+      <li>🦊 <a href="https://phantom.app/" target="_blank">Phantom</a></li>
+      <li>🧙‍♂️ <a href="https://solflare.com/" target="_blank">Solflare</a></li>
+      <li>🐉 <a href="https://backpack.app/" target="_blank">Backpack</a></li>
+    </ul>
+  </div>
 
   <h3>🔄 Step 2: Load Your Wallet with SOL</h3>
   <p>Buy SOL on an exchange (like Coinbase, Binance, Kraken) and send it to your wallet.</p>
 
   <h3>🚀 Step 3: Go to pump.fun</h3>
-  <p>Once live, visit <a href="https://pump.fun/" target="_blank">pump.fun</a> and search for <strong>$CGOR</strong> or paste the contract address.</p>
+  <div class="wallets">
+    <p>Once live, visit <a href="https://pump.fun/" target="_blank">pump.fun</a> and search for <strong>$CGOR</strong> or paste the contract address.</p>
+  </div>
 
   <h3>✅ Step 4: Buy $CGOR</h3>
   <p>Choose how much SOL to spend, click “Buy” — and you're in!</p>
