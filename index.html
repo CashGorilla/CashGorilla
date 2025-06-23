@@ -63,6 +63,26 @@
     .wallets a {
       text-decoration: underline;
     }
+    .contract-section {
+      margin-top: 60px;
+      font-size: 28px;
+    }
+    .contract-section code {
+      font-size: 24px;
+      background: #222;
+      padding: 5px 10px;
+      border-radius: 5px;
+    }
+    button {
+      font-size: 20px;
+      padding: 6px 12px;
+      margin-left: 10px;
+      cursor: pointer;
+      background-color: #FEE715;
+      color: #101820;
+      border: none;
+      border-radius: 5px;
+    }
   </style>
 </head>
 <body>
@@ -121,6 +141,13 @@
 
   <div class="spinner">
     <img src="ChatGPT Image 23. mai 2025, 21_47_46.png" alt="Spinning Coin" />
+  </div>
+
+  <!-- 📜 Contract Address Section -->
+  <div class="contract-section">
+    <h2>📜 Official Contract Address</h2>
+    <p><code id="contract">COMING SOON</code>
+    <button onclick="navigator.clipboard.writeText(document.getElementById('contract').innerText)">📋 Copy</button></p>
   </div>
 
   <h2>🔥 CashGorilla Burn Strategy: Milestone-Based</h2>
