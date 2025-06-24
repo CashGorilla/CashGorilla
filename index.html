@@ -49,6 +49,7 @@
     ul {
       list-style-type: none;
       padding: 0;
+      margin: 0;
     }
     ul li {
       margin-bottom: 10px;
@@ -86,18 +87,21 @@
     /* Roadmap styling */
     .roadmap-phase {
       margin-bottom: 60px;
+      text-align: center;
     }
     .roadmap-phase p {
       font-weight: bold;
-      font-size: 32px;
-      margin-bottom: 15px;
+      font-size: 36px; /* Bigger phase title */
+      margin-bottom: 20px;
     }
     .roadmap-phase ul {
       list-style-position: inside;
+      font-size: 32px; /* Bigger list text */
       padding-left: 0;
-      font-size: 28px;
       display: inline-block;
       text-align: left;
+      min-width: 320px; /* consistent width */
+      max-width: 460px;
     }
   </style>
 </head>
@@ -117,7 +121,7 @@
   <p><strong>Total Supply:</strong> 1,000,000,000 CGOR<br>
   <strong>Burn Strategy:</strong> 60% burned over five milestone stages<br>
   <strong>Liquidity:</strong> 100% community owned<br>
-
+  <strong></strong></p>
 
   <h2>🦍 Why CashGorilla?</h2>
   <p>🔥 Meme-worthy, GIF-worthy, tweet-worthy<br>
@@ -204,6 +208,7 @@
     </tbody>
   </table>
 
+  <!-- Roadmap Section -->
   <h2>🗺️ $CASHGORILLA Roadmap</h2>
 
   <div class="roadmap-phase">
@@ -211,7 +216,7 @@
     <ul>
       <li>✅ Launch on pump.fun</li>
       <li>✅ Website live</li>
-      <li>✅ Telegram &amp; X activated</li>
+      <li>✅ Telegram & X activated</li>
       <li>✅ Community building begins</li>
       <li>🔥 First milestone burn at $2K</li>
     </ul>
